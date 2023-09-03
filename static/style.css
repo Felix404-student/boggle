@@ -1,0 +1,80 @@
+.board {
+  border: solid 15px rgb(214,101,46);
+  border-radius: 15px;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: bolder;
+  font-size: 2.5em;
+  margin: auto;
+}
+
+.board td {
+  text-align: center;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: white;
+}
+
+.board td:hover {
+  cursor: pointer;
+}
+
+.msg {
+  padding: 1em;
+  margin: auto;
+  width: 97%;
+}
+
+.msg.ok {
+  color: white;
+  background-color: green;
+}
+
+.msg.err {
+  color: white;
+  background-color: darkred;
+}
+
+section {
+  align-items: center;
+  margin: auto;
+}
+
+p {
+  font-size: large;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+img {
+  height:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: rgb(250,199,150);
+}
+
+ul {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+#reset {
+  display: none;
+  margin-left: 40%;
+  margin-right: 40%;
+  width: 20%;
+}

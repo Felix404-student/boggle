@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boggle</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section id="boggle">
+
+      <img src="/static/boggle-logo.png" alt="Boggle logo">
+
+      <p> </p>
+
+        <table class="board">
+          <tbody>
+            {% for row in board %}
+            <tr>
+              {% for cell in row %}
+              <td>{{ cell }}</td>
+              {% endfor %}
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+
+      <p>High Score: <b>{{ highscore }}</b> 
+        in {{ nplays }} games played
+      </p>
+
+      <p> Score: <b class="score">0</b> </p>
+
+      <p> Time Left: <b class="timer"></b> </p>
+
+      <form method="POST" class="add-word">
+        <input title="word" name="word" class="word" autofocus>
+        <button type="submit">Enter</button>
+      </form>
+
+      <button id="reset" type="submit" onclick="window.location.reload();">Play Again?</button>
+
+      <p class="msg">
+        <!-- Alert messages for the user go here -->
+      </p>
+
+      <ul class="words">
+        <!-- Valid words found in the board go here as LIs -->   
+      </ul>
+
+    </section>
+    <script src="http://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/axios@0.19.0/dist/axios.js"></script>
+    <script src="/static/app.js"></script>
+    <script>
+      let game = new BoggleGame("boggle", 180);
+    </script>
+  </body>
+</html>
