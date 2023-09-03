@@ -1,4 +1,4 @@
-# boggle
+# Boggle
 Boggle app using Javascript, HTML, Python, Flask server
 
 You can enter words by typing or clicking the letters on the board
