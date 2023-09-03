@@ -1,10 +1,25 @@
 # Boggle
 Boggle app using Javascript, HTML, Python, Flask server
 
-You can enter words by typing or clicking the letters on the board
+<h1>Usage</h1>
+
+<p>Download files, then navigate to the folder in Terminal</p>
+
+<p>Run the following commands:</p>
+  
+<ul class="simple">
+    <li>python3 - m venv venv</li>
+    <li>source venv/bin/activate</li>
+    <li>pip3 install flask</li>
+    <li>flask run</li>
+</ul>
+
+<p>Open a web browser and navgiate to http://localhost:5000/</p>
+
+<p>You can enter words by typing or clicking the letters on the board</p>
 
 <h1>Flask Boggle</h1>
-<p><a class="reference external" href="../flask-boggle.zip">Download starter code</a></p>
+
 <p>In this exercise, you plan &amp; help code a Boggle game in Javascript and Python.</p>
 <div class="section" id="the-game">
 <h2>The Game</h2>
