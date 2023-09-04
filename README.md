@@ -8,7 +8,7 @@ Boggle app using Javascript, HTML, Python, Flask server
 <p>Run the following commands:</p>
   
 <ul class="simple">
-    <li>python3 - m venv venv</li>
+    <li>python3 -m venv venv</li>
     <li>source venv/bin/activate</li>
     <li>pip3 install flask</li>
     <li>flask run</li>
