@@ -10,6 +10,7 @@ Boggle app using Javascript, HTML, Python, Flask server
 <ul class="simple">
     <li>python3 -m venv venv</li>
     <li>source venv/bin/activate</li>
+    <li>pip install --upgrade pip</li>
     <li>pip3 install flask</li>
     <li>flask run</li>
 </ul>
